@@ -18,7 +18,7 @@ with open('posts_replied_to', 'r') as f:
     posts_replied_to = posts_replied_to.split('\n')
     posts_replied_to = list(filter(None, posts_replied_to))
 
-subreddit = bot.subreddit('Cool_Bot_Testing')
+subreddit = bot.subreddit('LucidDreaming')
 for submission in subreddit.hot(limit=5):
     if submission.id not in posts_replied_to:
         if re.search("was this a lucid dream?", submission.title, re.IGNORECASE):
