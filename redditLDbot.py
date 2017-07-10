@@ -1,45 +1,34 @@
-import praw
-import config
 import re
+import praw
+from LDbot import config
 
-
-bot = praw.Reddit(user_agent='LDbot v0.1',
+bot = praw.Reddit(user_agent='LDbot v1.0',
                   client_id=config.client_id,
                   client_secret=config.client_secret,
                   username=config.username,
                   password=config.password)
-
 reply = "Lucid Dreaming means you are aware that you are dreaming. This can mean with or without control. Use " \
         "this information to make your decision. This is a bot. Please contact /u/dude0413 for bugs or" \
         " suggestions. First bot version v0.1"
-
 with open('posts_replied_to', 'r') as f:
     posts_replied_to = f.read()
     posts_replied_to = posts_replied_to.split('\n')
     posts_replied_to = list(filter(None, posts_replied_to))
-
-subreddit = bot.subreddit('LucidDreaming')
-for submission in subreddit.hot(limit=5):
-    if submission.id not in posts_replied_to:
-        if re.search("was this a lucid dream?", submission.title, re.IGNORECASE):
-            submission.reply(reply)
-            print("Bot replying to : ", submission.title)
-            posts_replied_to.append(submission.id)
-    if submission.id not in posts_replied_to:
-        if re.search("Was this a LD?", submission.title, re.IGNORECASE):
-            submission.reply(reply)
-            print("Bot replying to: ", submission.title)
-            posts_replied_to.append(submission.id)
-    if submission.id not in posts_replied_to:
-        if re.search("Was this a Lucid Dream?", submission.title, re.IGNORECASE):
-            submission.reply(reply)
-            print("Bot replying to: ", submission.title)
-            posts_replied_to.append(submission.id)
-    if submission.id not in posts_replied_to:
-        if re.search("Lucid Dream?", submission.title, re.IGNORECASE):
-            submission.reply(reply)
-            print("Bot replying to: ", submission.title)
-            posts_replied_to.append(submission.id)
+subreddit = bot.subreddit('Cool_Bot_Testing')
+for submission in subreddit.new(limit=10):
+    id_of_post = submission.id
+    title_of_post = submission.title
+    author_of_post = submission.author
+    post_names = ['was this a lucid dream?', 'Was this a LD?', 'Was this a Lucid Dream?', 'Lucid Dream?']
+    post_names_length = len(post_names) - 1
+    x = 0
+    while x < post_names_length:
+        x += 1
+        if id_of_post not in posts_replied_to:
+            if re.search(post_names[x], title_of_post, re.IGNORECASE):
+                submission.reply(reply)
+                print('Bot replying to : "', title_of_post + '"' + ' by: "' + str(author_of_post) + '"')
+                posts_replied_to.append(id_of_post)
 with open("posts_replied_to", "w") as f:
     for post_id in posts_replied_to:
         f.write(post_id + "\n")
