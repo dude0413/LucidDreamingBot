@@ -23,7 +23,7 @@ with open('posts_replied_to', 'r') as f:
     posts_replied_to = list(filter(None, posts_replied_to))
 
 # Enters the subreddit #
-subreddit = bot.subreddit('Cool_Bot_Testing')
+subreddit = bot.subreddit('LucidDreaming')
 for submission in subreddit.new(limit=20):
         id_of_post = submission.id
         title_of_post = submission.title
