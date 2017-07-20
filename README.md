@@ -12,7 +12,7 @@ v1.2: Condensed the code from 47 to 37 lines. Decreased a LOT of the if statemen
 
 v1.3: added the "Has replied to: # posts"
 
-v1.4: added it to where it you can enter questions you are looking for and the answers you want for each of the questions in a txt file called 'replies_to_reply'. You would seperate them by ';'. Removed the "Has replied to: # posts" feature.
+v1.4: BIG UPDATE added it to where it you can enter questions you are looking for and the answers you want for each of the questions in a txt file called 'replies_to_reply'. You would seperate them by ';'. Removed the "Has replied to: # posts" feature. This update it x10 more easier to add more questions to look for, also a lot easier to answer. 
 
 v1.5: Small update, included the number of #'s I have commented on, into each comment.
 
