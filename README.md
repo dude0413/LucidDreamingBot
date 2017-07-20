@@ -16,4 +16,6 @@ v1.4: BIG UPDATE added it to where it you can enter questions you are looking fo
 
 v1.5: Small update, included the number of #'s I have commented on, into each comment.
 
-v1.6 (Plans): BIG UPDATE? Including comments into the mix?
+v1.6: Another small update, included adding 'This is a bot. Please contact /u/dude0413 for bugs or suggestions. Has replied to # posts' to every comment it makes.
+
+v1.7 (Plans): BIG UPDATE? Including comments into the mix or downvote to delete.
