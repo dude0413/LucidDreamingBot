@@ -1,10 +1,10 @@
 # LucidDreamingBot
-This bot will look for when plebs ask if they had a lucid dream and will answer a specfic paragraph to the post (RedditBot).
+This bot will look for when plebs ask certain, recurring questions when it comes to lucid dreaming and will answer a specfic paragraph to the post (RedditBot).
 No copying plez.
 
 UPDATES:
 
-v1.0: made bot
+v1.0: made the basic framework for the bot.
 
 v1.1: added variables for some of the submissions arguments
 
