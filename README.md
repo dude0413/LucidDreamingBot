@@ -14,4 +14,6 @@ v1.3: added the "Has replied to: # posts"
 
 v1.4: added it to where it you can enter questions you are looking for and the answers you want for each of the questions in a txt file called 'replies_to_reply'. You would seperate them by ';'. Removed the "Has replied to: # posts" feature.
 
-v1.5 (PLANS): Somehow integrating the # of posts into each answer. Intigrating comments into the mix too?
+v1.5: Small update, included the number of #'s I have commented on, into each comment.
+
+v1.6 (Plans): BIG UPDATE? Including comments into the mix?
