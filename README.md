@@ -18,4 +18,6 @@ v1.5: Small update, included the number of #'s I have commented on, into each co
 
 v1.6: Another small update, included adding 'This is a bot. Please contact /u/dude0413 for bugs or suggestions. Has replied to # posts' to every comment it makes. Added to where the info about the bot is on the next line. Not on the same line as the main answer. 
 
-v1.7 (Plans): BIG UPDATE? Including comments into the mix or downvote to delete.
+v1.7: added updates to where you it automatically sends me a text message every time the bot replies to a post (with Twilio Trail Account). 
+
+v1.8 (PLANS): I plan to add comments into the mix and maybe where you can downvote the comment to delete it. 
