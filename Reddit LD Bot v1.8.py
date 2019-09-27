@@ -3,7 +3,7 @@ import praw, re
 from package.credentials import account_sid, auth_token, my_twilio, my_cell
 from twilio.rest import Client
 
-version = 'v1.8'
+version = 'v1.9'
 # Common sub-reddits #
 LD = 'LucidDreaming'
 CBT = 'Cool_Bot_Testing'
