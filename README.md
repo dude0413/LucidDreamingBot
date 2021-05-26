@@ -1,6 +1,7 @@
 # LucidDreamingBot
-This bot will look for when plebs ask certain, recurring questions when it comes to lucid dreaming and will answer a specfic paragraph to the post (RedditBot).
-No copying plez.
+This bot will look for when Redditors ask certain, recurring questions when it comes to lucid dreaming and will answer a specfic paragraph to the post (RedditBot).
+No copying please.
+This was my first major Python project that I did completely on my own.
 
 UPDATES:
 
@@ -20,4 +21,4 @@ v1.6: Another small update, included adding 'This is a bot. Please contact /u/du
 
 v1.7: added updates to where you it automatically sends me a text message every time the bot replies to a post (with Twilio Trail Account). 
 
-v1.8 (PLANS): I plan to add comments into the mix and maybe where you can downvote the comment to delete it. 
+v1.8 (Potential PLANS): I plan to add comments into the mix and maybe where you can downvote the comment to delete it. 
